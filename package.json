@@ -1,0 +1,40 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "node api",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"staging": "set NODE_ENV=staging& node server.js",
+		"start": "set NODE_ENV=production& node server.js",
+		"dev": "set NODE_ENV=development& nodemon --exec babel-node server.js"
+	},
+	"keywords": [
+		"node",
+		"express",
+		"mongoose"
+	],
+	"author": "vikash rahii",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-validator": "^6.10.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.11.18",
+		"morgan": "^1.10.0",
+		"multer": "^1.4.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.15.8",
+		"@babel/node": "^7.15.8",
+		"@babel/preset-env": "^7.15.8",
+		"babel-cli": "^6.26.0",
+		"babel-preset-es2015": "^6.24.1",
+		"nodemon": "^2.0.14",
+		"rimraf": "^3.0.2"
+	}
+}
